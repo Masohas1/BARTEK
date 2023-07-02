@@ -9,6 +9,7 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -192,62 +193,86 @@
                     quae, corrupti natus ratione dolore rem aut? Ex ipsam ipsum eos ad voluptas!
                 </p>
             </div>
-            <div class="project-slider">
-                <div class="slider">
-                    <article class="slide active">
-                        <div class="slide-img">
-                            <img src="img/renovation1.jpg" alt="">
-                        </div>
-                        <div class="slide-text">
-                            <h1 class="slide-title">Wykończenie w stylu gotyckim</h1>
-                            <p>Aby zgodnie z estetyką gotyckiego stylu wykończyć wnętrze, należało podjąć kilka kroków.
-                                Wprowadzenie ciężkich, rzeźbionych mebli, takich jak majestatyczne dębowe stoły i
-                                krzesła, nadawało przestrzeni solidności i elegancji. Wysokie, ceglane ściany ożywiano
-                                za pomocą okazałych kandelabrów i witraży, które rozświetlały wnętrze i nadawały mu
-                                tajemniczy charakter. Przez malowanie ścian w głębokich odcieniach purpury czy zmysłowej
-                                czerni, tworzono atmosferę pełną dramatyzmu i wyrazistości, która nieodłącznie
-                                towarzyszyła stylowi gotyckiemu.</p>
-                        </div>
-                    </article>
-                    <article class="slide">
-                        <div class="slide-img">
-                            <img src="img/renovation2.jpg" alt="">
-                        </div>
-                        <div class="slide-text">
-                            <h1 class="slide-title">Wykończenie w stylu sdfas</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem labore cum unde
-                                ab pariatur sequi possimus consectetur ipsa? Minus exercitationem magni nulla aspernatur
-                                asperiores nobis facere neque quod, nisi quas? Sint, placeat provident quas molestiae
-                                nostrum quod alias asperiores nesciunt. Sequi recusandae consequatur, molestias enim ad
-                                velit esse voluptate?.</p>
-                        </div>
-                    </article>
-                    <article class="slide">
-                        <div class="slide-img">
-                            <img src="img/renovation3.jpg" alt="">
-                        </div>
-                        <div class="slide-text">
-                            <h1 class="slide-title">Wykończenie w stylu qwerqw</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, at ab itaque aspernatur
-                                excepturi vel dolore. Recusandae facere ullam sunt animi quia nihil suscipit doloribus
-                                ipsam itaque cum eos nemo vitae voluptatem, nisi ex natus pariatur magnam perferendis,
-                                explicabo odit hic amet? Voluptas obcaecati quas in laudantium necessitatibus fuga
-                                odit..</p>
-                        </div>
-                    </article>
-                    <div class="slide-buttons">
-                        <div class="button btn-left"><img src="img/icon/arrow.svg" alt=""></div>
-                        <div class="button btn-right"><img src="img/icon/arrow.svg" alt=""></div>
+            <div class="project-slider splide">
+                <div class="splide__arrows">
+                    <button class="splide__arrow splide__arrow--prev">
+                        <img src="img/icon/arrow.svg" alt="">
+                    </button>
+                    <button class="splide__arrow splide__arrow--next">
+                        <img src="img/icon/arrow.svg" alt="">
+
+                    </button>
+                </div>
+                <div class="slider splide__track">
+                    <div class="splide__list">
+                        <article class="slide splide__slide">
+                            <div class="slide-img">
+                                <img src="img/renovation1.jpg" alt="">
+                            </div>
+                            <div class="slide-text">
+                                <h1 class="slide-title">Wykończenie w stylu gotyckim</h1>
+                                <p>Aby zgodnie z estetyką gotyckiego stylu wykończyć wnętrze, należało podjąć kilka
+                                    kroków.
+                                    Wprowadzenie ciężkich, rzeźbionych mebli, takich jak majestatyczne dębowe stoły i
+                                    krzesła, nadawało przestrzeni solidności i elegancji. Wysokie, ceglane ściany
+                                    ożywiano
+                                    za pomocą okazałych kandelabrów i witraży, które rozświetlały wnętrze i nadawały mu
+                                    tajemniczy charakter. Przez malowanie ścian w głębokich odcieniach purpury czy
+                                    zmysłowej
+                                    czerni, tworzono atmosferę pełną dramatyzmu i wyrazistości, która nieodłącznie
+                                    towarzyszyła stylowi gotyckiemu.</p>
+                            </div>
+                        </article>
+                        <article class="slide splide__slide">
+                            <div class="slide-img">
+                                <img src="img/renovation2.jpg" alt="">
+                            </div>
+                            <div class="slide-text">
+                                <h1 class="slide-title">Wykończenie w stylu sdfas</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse voluptatem labore cum
+                                    unde
+                                    ab pariatur sequi possimus consectetur ipsa? Minus exercitationem magni nulla
+                                    aspernatur
+                                    asperiores nobis facere neque quod, nisi quas? Sint, placeat provident quas
+                                    molestiae
+                                    nostrum quod alias asperiores nesciunt. Sequi recusandae consequatur, molestias enim
+                                    ad
+                                    velit esse voluptate?.</p>
+                            </div>
+                        </article>
+                        <article class="slide splide__slide">
+                            <div class="slide-img">
+                                <img src="img/renovation3.jpg" alt="">
+                            </div>
+                            <div class="slide-text">
+                                <h1 class="slide-title">Wykończenie w stylu qwerqw</h1>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, at ab itaque
+                                    aspernatur
+                                    excepturi vel dolore. Recusandae facere ullam sunt animi quia nihil suscipit
+                                    doloribus
+                                    ipsam itaque cum eos nemo vitae voluptatem, nisi ex natus pariatur magnam
+                                    perferendis,
+                                    explicabo odit hic amet? Voluptas obcaecati quas in laudantium necessitatibus fuga
+                                    odit..</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
 
+
         </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="GSAP/gsap.min.js"></script>
     <script src="https://kit.fontawesome.com/b1b3c3cad3.js" crossorigin="anonymous"></script>
     <script src="main.js"></script>
-    <script src="GSAP/gsap.min.js"></script>
+
+    <script>
+        new Splide('.splide', {
+            type: 'loop'
+        }).mount();
+    </script>
 
 </body>
 

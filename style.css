@@ -350,11 +350,6 @@ main {
     margin: 0 auto;
 }
 
-.slide {
-    display: none;
-
-}
-
 .slide-title,
 .slide-text p,
 .slide-img img {
@@ -380,7 +375,7 @@ main {
     line-height: 1.2em;
 }
 
-.button {
+.splide__arrow {
     width: 80px;
     height: 80px;
     position: absolute;
@@ -398,8 +393,4 @@ main {
 .btn-right {
     right: 10%;
     transform: rotate(-90deg);
-}
-
-.active {
-    display: block !important;
 }

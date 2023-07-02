@@ -10,29 +10,3 @@ window.addEventListener("scroll", () => {
     element.style.transform = `translateY(${yPos}px)`;
   });
 });
-
-////////////////////SLIDER////////////////////
-
-const slides = [...document.querySelectorAll(".slide")];
-const btns = [...document.querySelectorAll(".button")];
-
-slidesNumber = 0;
-
-const clickArrow = function () {
-  arrowClass = [...this.classList];
-  if (arrowClass.includes("btn-right")) {
-    slides[slidesNumber].classList.toggle("active");
-    slidesNumber++;
-    if (slidesNumber >= slides.length) slidesNumber = 0;
-    slides[slidesNumber].classList.toggle("active");
-  } else if (arrowClass.includes("btn-left")) {
-    slides[slidesNumber].classList.toggle("active");
-    slidesNumber--;
-    if (slidesNumber < 0) slidesNumber = slides.length - 1;
-    slides[slidesNumber].classList.toggle("active");
-  }
-};
-
-btns.forEach((btn) => {
-  btn.addEventListener("click", clickArrow);
-});
