@@ -12,6 +12,7 @@
 }
 
 html {
+    position: relative;
     font-size: 62.5%;
     /* font-family: 'Lato', sans-serif; */
     font-family: 'Montserrat', sans-serif;
@@ -19,15 +20,18 @@ html {
 }
 
 
+
 nav {
-    position: absolute;
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     display: flex;
     font-size: 2.3em;
     justify-content: space-around;
     align-items: center;
     padding: 30px 0;
-    z-index: 3;
+    z-index: 99;
 }
 
 .logo,
@@ -376,13 +380,16 @@ main {
 }
 
 .splide__arrow {
+    display: block;
+    position: absolute;
+    top: 40%;
     width: 80px;
     height: 80px;
-    position: absolute;
-    top: 50%;
+    background-color: transparent;
     border: 1px solid var(--ofert-color);
     border-radius: 50%;
     cursor: pointer;
+    opacity: 1;
 }
 
 .btn-left {
