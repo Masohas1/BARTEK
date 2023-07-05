@@ -10,3 +10,13 @@ window.addEventListener("scroll", () => {
     element.style.transform = `translateY(${yPos}px)`;
   });
 });
+
+////////////////////SCROLL EFEKT////////////////////
+
+const nav = document.querySelector("nav");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY !== 0) {
+    nav.classList.add("active");
+  } else nav.classList.remove("active");
+});

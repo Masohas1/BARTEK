@@ -14,7 +14,6 @@
 html {
     position: relative;
     font-size: 62.5%;
-    /* font-family: 'Lato', sans-serif; */
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 }
@@ -32,6 +31,13 @@ nav {
     align-items: center;
     padding: 30px 0;
     z-index: 99;
+    transition: background-color 0.2s;
+}
+
+.active {
+    background-color: rgba(254, 244, 231, 0.9);
+    backdrop-filter: blur(2px);
+    border-bottom: 1px solid var(--ofert-color);
 }
 
 .logo,
@@ -60,7 +66,7 @@ nav .navMenu {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
-    color: #dbdbdb;
+    color: var(--ofert-color);
 }
 
 .tel i {
