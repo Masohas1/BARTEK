@@ -1,3 +1,6 @@
+/* rysunek techniczny */
+/*animacja malowania pędzlem  */
+
 :root {
     --background-content-color: #f4f4f4;
     --ofert-color: #fba53bd1;
@@ -21,8 +24,8 @@ html {
 
 
 nav {
-    /* position: fixed; */
-    position: absolute;
+    position: fixed;
+    /* position: absolute; */
     top: 0;
     left: 0;
     width: 100%;
@@ -410,4 +413,21 @@ main {
 .btn-right {
     right: 10%;
     transform: rotate(-90deg);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    background-color: var(--background-content-color);
+    height: 200px;
+}
+
+.content-footer {
+    width: 80%;
+    font-size: 2rem;
+    margin: 0 auto;
+}
+
+.footer-social h3 {
+    max-width: 400px;
 }
